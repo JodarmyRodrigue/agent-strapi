@@ -584,64 +584,6 @@
           "issue": {
             "type": "string"
           },
-          "contact_registration_sheet": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "instigator_name": {
-                "type": "string"
-              },
-              "instigator_number": {
-                "type": "string"
-              },
-              "case_id": {
-                "type": "string"
-              },
-              "firstname": {
-                "type": "string"
-              },
-              "lastname": {
-                "type": "string"
-              },
-              "household_chief_name": {
-                "type": "string"
-              },
-              "case_location": {
-                "type": "string"
-              },
-              "address": {
-                "type": "string"
-              },
-              "community_chief_name": {
-                "type": "string"
-              },
-              "symptoms_date": {
-                "type": "string"
-              },
-              "sanitary_district": {
-                "type": "string"
-              },
-              "region": {
-                "type": "string"
-              },
-              "contact_infos": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "created_by": {
             "required": [
               "id",
@@ -781,9 +723,6 @@
             "type": "string"
           },
           "issue": {
-            "type": "string"
-          },
-          "contact_registration_sheet": {
             "type": "string"
           },
           "created_by": {

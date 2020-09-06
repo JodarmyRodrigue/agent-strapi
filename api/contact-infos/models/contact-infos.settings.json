@@ -57,10 +57,6 @@
     },
     "issue": {
       "type": "string"
-    },
-    "contact_registration_sheet": {
-      "via": "contact_infos",
-      "model": "contact-registration-sheet"
     }
   }
 }

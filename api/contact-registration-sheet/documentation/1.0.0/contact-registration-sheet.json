@@ -572,69 +572,63 @@
             "type": "string"
           },
           "contact_infos": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "firstname": {
-                  "type": "string"
-                },
-                "lastname": {
-                  "type": "string"
-                },
-                "gender": {
-                  "type": "string"
-                },
-                "age": {
-                  "type": "integer"
-                },
-                "case_relation": {
-                  "type": "string"
-                },
-                "last_contact": {
-                  "type": "string"
-                },
-                "first_visit": {
-                  "type": "string"
-                },
-                "last_check": {
-                  "type": "string"
-                },
-                "city": {
-                  "type": "string"
-                },
-                "district": {
-                  "type": "string"
-                },
-                "phone": {
-                  "type": "string"
-                },
-                "occupation": {
-                  "type": "string"
-                },
-                "workplace": {
-                  "type": "string"
-                },
-                "contact_type": {
-                  "type": "string"
-                },
-                "issue": {
-                  "type": "string"
-                },
-                "contact_registration_sheet": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "firstname": {
+                "type": "string"
+              },
+              "lastname": {
+                "type": "string"
+              },
+              "gender": {
+                "type": "string"
+              },
+              "age": {
+                "type": "integer"
+              },
+              "case_relation": {
+                "type": "string"
+              },
+              "last_contact": {
+                "type": "string"
+              },
+              "first_visit": {
+                "type": "string"
+              },
+              "last_check": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "district": {
+                "type": "string"
+              },
+              "phone": {
+                "type": "string"
+              },
+              "occupation": {
+                "type": "string"
+              },
+              "workplace": {
+                "type": "string"
+              },
+              "contact_type": {
+                "type": "string"
+              },
+              "issue": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -767,10 +761,7 @@
             "type": "string"
           },
           "contact_infos": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+            "type": "string"
           },
           "created_by": {
             "type": "string"
