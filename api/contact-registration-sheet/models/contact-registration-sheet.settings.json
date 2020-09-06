@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_registration_sheets",
+  "info": {
+    "name": "contact_registration_sheet"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "instigator_name": {
+      "type": "string"
+    },
+    "instigator_number": {
+      "type": "string"
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "household_chief_name": {
+      "type": "string"
+    },
+    "case_location": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "community_chief_name": {
+      "type": "string"
+    },
+    "symptoms_date": {
+      "type": "date"
+    },
+    "sanitary_district": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    }
+  }
+}

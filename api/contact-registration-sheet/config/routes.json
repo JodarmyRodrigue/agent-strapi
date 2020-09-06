@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/contact-registration-sheets",
+      "handler": "contact-registration-sheet.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contact-registration-sheets/count",
+      "handler": "contact-registration-sheet.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contact-registration-sheets/:id",
+      "handler": "contact-registration-sheet.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/contact-registration-sheets",
+      "handler": "contact-registration-sheet.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/contact-registration-sheets/:id",
+      "handler": "contact-registration-sheet.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/contact-registration-sheets/:id",
+      "handler": "contact-registration-sheet.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
