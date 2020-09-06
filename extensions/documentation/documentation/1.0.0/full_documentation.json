@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/06/2020 6:44:55 PM"
+    "x-generation-date": "09/06/2020 7:54:28 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3251,6 +3251,64 @@
           "issue": {
             "type": "string"
           },
+          "contact_registration_sheet": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "instigator_name": {
+                "type": "string"
+              },
+              "instigator_number": {
+                "type": "string"
+              },
+              "case_id": {
+                "type": "string"
+              },
+              "firstname": {
+                "type": "string"
+              },
+              "lastname": {
+                "type": "string"
+              },
+              "household_chief_name": {
+                "type": "string"
+              },
+              "case_location": {
+                "type": "string"
+              },
+              "address": {
+                "type": "string"
+              },
+              "community_chief_name": {
+                "type": "string"
+              },
+              "symptoms_date": {
+                "type": "string"
+              },
+              "sanitary_district": {
+                "type": "string"
+              },
+              "region": {
+                "type": "string"
+              },
+              "contact_infos": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "created_by": {
             "required": [
               "id",
@@ -3392,6 +3450,9 @@
           "issue": {
             "type": "string"
           },
+          "contact_registration_sheet": {
+            "type": "string"
+          },
           "created_by": {
             "type": "string"
           },
@@ -3443,6 +3504,73 @@
           },
           "region": {
             "type": "string"
+          },
+          "contact_infos": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "firstname": {
+                  "type": "string"
+                },
+                "lastname": {
+                  "type": "string"
+                },
+                "gender": {
+                  "type": "string"
+                },
+                "age": {
+                  "type": "integer"
+                },
+                "case_relation": {
+                  "type": "string"
+                },
+                "last_contact": {
+                  "type": "string"
+                },
+                "first_visit": {
+                  "type": "string"
+                },
+                "last_check": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "district": {
+                  "type": "string"
+                },
+                "phone": {
+                  "type": "string"
+                },
+                "occupation": {
+                  "type": "string"
+                },
+                "workplace": {
+                  "type": "string"
+                },
+                "contact_type": {
+                  "type": "string"
+                },
+                "issue": {
+                  "type": "string"
+                },
+                "contact_registration_sheet": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "created_by": {
             "required": [
@@ -3571,6 +3699,12 @@
           },
           "region": {
             "type": "string"
+          },
+          "contact_infos": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "created_by": {
             "type": "string"

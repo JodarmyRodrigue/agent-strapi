@@ -44,6 +44,10 @@
     },
     "region": {
       "type": "string"
+    },
+    "contact_infos": {
+      "collection": "contact-infos",
+      "via": "contact_registration_sheet"
     }
   }
 }
