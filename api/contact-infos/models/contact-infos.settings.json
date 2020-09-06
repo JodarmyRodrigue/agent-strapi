@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_infos",
+  "info": {
+    "name": "contact_infos"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ]
+    },
+    "age": {
+      "type": "integer"
+    },
+    "case_relation": {
+      "type": "string"
+    },
+    "last_contact": {
+      "type": "date"
+    },
+    "first_visit": {
+      "type": "date"
+    },
+    "last_check": {
+      "type": "date"
+    },
+    "city": {
+      "type": "string"
+    },
+    "district": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "occupation": {
+      "type": "string"
+    },
+    "workplace": {
+      "type": "string"
+    },
+    "contact_type": {
+      "type": "string"
+    },
+    "issue": {
+      "type": "string"
+    }
+  }
+}
