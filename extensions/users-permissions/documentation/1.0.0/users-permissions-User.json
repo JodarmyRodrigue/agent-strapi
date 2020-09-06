@@ -1272,6 +1272,9 @@
           "web_user": {
             "type": "boolean"
           },
+          "occupation": {
+            "type": "string"
+          },
           "created_by": {
             "required": [
               "id",
@@ -1417,6 +1420,9 @@
           },
           "web_user": {
             "type": "boolean"
+          },
+          "occupation": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"
