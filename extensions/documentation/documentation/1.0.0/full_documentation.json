@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/06/2020 8:47:59 PM"
+    "x-generation-date": "09/08/2020 3:20:05 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1078,6 +1078,1054 @@
         "summary": "",
         "tags": [
           "Contact-registration-sheet"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/coronavirus-notification-sheets": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Coronavirus-notification-sheet"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_in",
+            "in": "query",
+            "required": false,
+            "description": "Get records that matches any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_nin",
+            "in": "query",
+            "required": false,
+            "description": "Get records that doesn't match any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "post": {
+        "deprecated": false,
+        "description": "Create a new record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Coronavirus-notification-sheet"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewCoronavirus-notification-sheet"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/coronavirus-notification-sheets/count": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Coronavirus-notification-sheet"
+        ],
+        "parameters": []
+      }
+    },
+    "/coronavirus-notification-sheets/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Coronavirus-notification-sheet"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Coronavirus-notification-sheet"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewCoronavirus-notification-sheet"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a record",
+        "responses": {
+          "200": {
+            "description": "deletes a single record based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Coronavirus-notification-sheet"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/exam-control-sheets": {
+      "get": {
+        "deprecated": false,
+        "description": "Find all the exam-control-sheets's records",
+        "responses": {
+          "200": {
+            "description": "Retrieve exam-control-sheets document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Exam-control-sheets"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_in",
+            "in": "query",
+            "required": false,
+            "description": "Get records that matches any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_nin",
+            "in": "query",
+            "required": false,
+            "description": "Get records that doesn't match any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "post": {
+        "deprecated": false,
+        "description": "Create a new exam-control-sheets record",
+        "responses": {
+          "200": {
+            "description": "Retrieve exam-control-sheets document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Exam-control-sheets"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewExam-control-sheets"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/exam-control-sheets/count": {
+      "get": {
+        "deprecated": false,
+        "description": "Retrieve the numver of exam-control-sheets documents",
+        "responses": {
+          "200": {
+            "description": "Retrieve exam-control-sheets document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Exam-control-sheets"
+        ],
+        "parameters": []
+      }
+    },
+    "/exam-control-sheets/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "Find one exam-control-sheets record",
+        "responses": {
+          "200": {
+            "description": "Retrieve exam-control-sheets document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Exam-control-sheets"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a single exam-control-sheets record",
+        "responses": {
+          "200": {
+            "description": "Retrieve exam-control-sheets document(s)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Exam-control-sheets"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewExam-control-sheets"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a single exam-control-sheets record",
+        "responses": {
+          "200": {
+            "description": "deletes a single exam-control-sheets based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Exam-control-sheets"
         ],
         "parameters": [
           {
@@ -3634,6 +4682,1188 @@
             "type": "string"
           },
           "contact_infos": {
+            "type": "string"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
+          }
+        }
+      },
+      "Coronavirus-notification-sheet": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "case_status": {
+            "type": "string",
+            "enum": [
+              "suspect",
+              "contact",
+              "traveler",
+              "risk_population",
+              "other"
+            ]
+          },
+          "case_status_risk_population": {
+            "type": "string",
+            "enum": [
+              "hemodialysed",
+              "hta",
+              "diabetes",
+              "agents"
+            ]
+          },
+          "other_case_status": {
+            "type": "string"
+          },
+          "investigation_date": {
+            "type": "string"
+          },
+          "sanitary_formation": {
+            "type": "string"
+          },
+          "district": {
+            "type": "string"
+          },
+          "region": {
+            "type": "string"
+          },
+          "case_number": {
+            "type": "integer"
+          },
+          "investigator": {
+            "type": "string"
+          },
+          "investigator_phone": {
+            "type": "string"
+          },
+          "epid": {
+            "type": "string"
+          },
+          "patient_name": {
+            "type": "string"
+          },
+          "patient_birthday": {
+            "type": "string"
+          },
+          "age": {
+            "type": "integer"
+          },
+          "age_months": {
+            "type": "integer"
+          },
+          "age_days": {
+            "type": "integer"
+          },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "male",
+              "female"
+            ]
+          },
+          "patient_occupation": {
+            "type": "string"
+          },
+          "patient_residence_district": {
+            "type": "string"
+          },
+          "patient_city": {
+            "type": "string"
+          },
+          "patient_quarter": {
+            "type": "string"
+          },
+          "patient_gps_latitude": {
+            "type": "number"
+          },
+          "patient_gps_longitude": {
+            "type": "number"
+          },
+          "patient_residence": {
+            "type": "string",
+            "enum": [
+              "urban",
+              "rural"
+            ]
+          },
+          "patient_caretaker_name": {
+            "type": "string"
+          },
+          "patient_caretaker_phone": {
+            "type": "string"
+          },
+          "patient_phone": {
+            "type": "string"
+          },
+          "urgent_infos": {
+            "type": "string"
+          },
+          "first_symptoms": {
+            "type": "string"
+          },
+          "consultation_date": {
+            "type": "string"
+          },
+          "symptoms": {
+            "type": "object"
+          },
+          "patient_status": {
+            "type": "string",
+            "enum": [
+              "hospitalized",
+              "home",
+              "quarantine"
+            ]
+          },
+          "patient_status_location": {
+            "type": "string"
+          },
+          "patient_comorbidity_conditions": {
+            "type": "object"
+          },
+          "patient_occupations": {
+            "type": "object"
+          },
+          "patient_did_travel": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "patient_travel_destinations": {
+            "type": "object"
+          },
+          "patient_visit_health": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "patient_contact": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "patient_contact_location": {
+            "type": "object"
+          },
+          "patient_travel_location": {
+            "type": "object"
+          },
+          "patient_did_visit_animal_market": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "patient_did_wear_mask": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "patient_did_wash_hands": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "sample": {
+            "type": "boolean"
+          },
+          "sample_date": {
+            "type": "string"
+          },
+          "sample_hour": {
+            "type": "time"
+          },
+          "sample_nature": {
+            "type": "string",
+            "enum": [
+              "oro_pharynged",
+              "naso_pharynged"
+            ]
+          },
+          "sample_other_nature": {
+            "type": "string"
+          },
+          "sample_blood": {
+            "type": "boolean"
+          },
+          "sample_conservation": {
+            "type": "string",
+            "enum": [
+              "ambiant",
+              "cold"
+            ]
+          },
+          "no_sample_reason": {
+            "type": "string",
+            "enum": [
+              "no_kit",
+              "no_skill",
+              "patient_state",
+              "patient_refusal"
+            ]
+          },
+          "no_sample_reason_other": {
+            "type": "string"
+          },
+          "sample_agent_name": {
+            "type": "string"
+          },
+          "sample_agent_phone": {
+            "type": "string"
+          },
+          "lab_reception_date": {
+            "type": "string"
+          },
+          "lab_reception_hour": {
+            "type": "time"
+          },
+          "lab_reg_number": {
+            "type": "string"
+          },
+          "lab_reception_temperature": {
+            "type": "string",
+            "enum": [
+              "frozen",
+              "cold",
+              "ambiant"
+            ]
+          },
+          "lab_name": {
+            "type": "string"
+          },
+          "lab_reception_condition": {
+            "type": "string",
+            "enum": [
+              "good",
+              "bad"
+            ]
+          },
+          "pcr": {
+            "type": "boolean"
+          },
+          "pcr_date": {
+            "type": "string"
+          },
+          "sars_covid_kit": {
+            "type": "string"
+          },
+          "rt_pcr_result": {
+            "type": "string",
+            "enum": [
+              "positive",
+              "negative"
+            ]
+          },
+          "biologist_name": {
+            "type": "string"
+          },
+          "biologist_phone": {
+            "type": "string"
+          },
+          "result_transmission_date": {
+            "type": "string"
+          },
+          "created_by": {
+            "required": [
+              "id",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "firstname": {
+                "type": "string"
+              },
+              "lastname": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "registrationToken": {
+                "type": "string"
+              },
+              "isActive": {
+                "type": "boolean"
+              },
+              "roles": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "blocked": {
+                "type": "boolean"
+              }
+            }
+          },
+          "updated_by": {
+            "required": [
+              "id",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "firstname": {
+                "type": "string"
+              },
+              "lastname": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "registrationToken": {
+                "type": "string"
+              },
+              "isActive": {
+                "type": "boolean"
+              },
+              "roles": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "blocked": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      },
+      "NewCoronavirus-notification-sheet": {
+        "properties": {
+          "case_status": {
+            "type": "string",
+            "enum": [
+              "suspect",
+              "contact",
+              "traveler",
+              "risk_population",
+              "other"
+            ]
+          },
+          "case_status_risk_population": {
+            "type": "string",
+            "enum": [
+              "hemodialysed",
+              "hta",
+              "diabetes",
+              "agents"
+            ]
+          },
+          "other_case_status": {
+            "type": "string"
+          },
+          "investigation_date": {
+            "type": "string"
+          },
+          "sanitary_formation": {
+            "type": "string"
+          },
+          "district": {
+            "type": "string"
+          },
+          "region": {
+            "type": "string"
+          },
+          "case_number": {
+            "type": "integer"
+          },
+          "investigator": {
+            "type": "string"
+          },
+          "investigator_phone": {
+            "type": "string"
+          },
+          "epid": {
+            "type": "string"
+          },
+          "patient_name": {
+            "type": "string"
+          },
+          "patient_birthday": {
+            "type": "string"
+          },
+          "age": {
+            "type": "integer"
+          },
+          "age_months": {
+            "type": "integer"
+          },
+          "age_days": {
+            "type": "integer"
+          },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "male",
+              "female"
+            ]
+          },
+          "patient_occupation": {
+            "type": "string"
+          },
+          "patient_residence_district": {
+            "type": "string"
+          },
+          "patient_city": {
+            "type": "string"
+          },
+          "patient_quarter": {
+            "type": "string"
+          },
+          "patient_gps_latitude": {
+            "type": "number"
+          },
+          "patient_gps_longitude": {
+            "type": "number"
+          },
+          "patient_residence": {
+            "type": "string",
+            "enum": [
+              "urban",
+              "rural"
+            ]
+          },
+          "patient_caretaker_name": {
+            "type": "string"
+          },
+          "patient_caretaker_phone": {
+            "type": "string"
+          },
+          "patient_phone": {
+            "type": "string"
+          },
+          "urgent_infos": {
+            "type": "string"
+          },
+          "first_symptoms": {
+            "type": "string"
+          },
+          "consultation_date": {
+            "type": "string"
+          },
+          "symptoms": {
+            "type": "object"
+          },
+          "patient_status": {
+            "type": "string",
+            "enum": [
+              "hospitalized",
+              "home",
+              "quarantine"
+            ]
+          },
+          "patient_status_location": {
+            "type": "string"
+          },
+          "patient_comorbidity_conditions": {
+            "type": "object"
+          },
+          "patient_occupations": {
+            "type": "object"
+          },
+          "patient_did_travel": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "patient_travel_destinations": {
+            "type": "object"
+          },
+          "patient_visit_health": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "patient_contact": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "patient_contact_location": {
+            "type": "object"
+          },
+          "patient_travel_location": {
+            "type": "object"
+          },
+          "patient_did_visit_animal_market": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "patient_did_wear_mask": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "patient_did_wash_hands": {
+            "type": "string",
+            "enum": [
+              "yes",
+              "no",
+              "unknown"
+            ]
+          },
+          "sample": {
+            "type": "boolean"
+          },
+          "sample_date": {
+            "type": "string"
+          },
+          "sample_hour": {
+            "type": "time"
+          },
+          "sample_nature": {
+            "type": "string",
+            "enum": [
+              "oro_pharynged",
+              "naso_pharynged"
+            ]
+          },
+          "sample_other_nature": {
+            "type": "string"
+          },
+          "sample_blood": {
+            "type": "boolean"
+          },
+          "sample_conservation": {
+            "type": "string",
+            "enum": [
+              "ambiant",
+              "cold"
+            ]
+          },
+          "no_sample_reason": {
+            "type": "string",
+            "enum": [
+              "no_kit",
+              "no_skill",
+              "patient_state",
+              "patient_refusal"
+            ]
+          },
+          "no_sample_reason_other": {
+            "type": "string"
+          },
+          "sample_agent_name": {
+            "type": "string"
+          },
+          "sample_agent_phone": {
+            "type": "string"
+          },
+          "lab_reception_date": {
+            "type": "string"
+          },
+          "lab_reception_hour": {
+            "type": "time"
+          },
+          "lab_reg_number": {
+            "type": "string"
+          },
+          "lab_reception_temperature": {
+            "type": "string",
+            "enum": [
+              "frozen",
+              "cold",
+              "ambiant"
+            ]
+          },
+          "lab_name": {
+            "type": "string"
+          },
+          "lab_reception_condition": {
+            "type": "string",
+            "enum": [
+              "good",
+              "bad"
+            ]
+          },
+          "pcr": {
+            "type": "boolean"
+          },
+          "pcr_date": {
+            "type": "string"
+          },
+          "sars_covid_kit": {
+            "type": "string"
+          },
+          "rt_pcr_result": {
+            "type": "string",
+            "enum": [
+              "positive",
+              "negative"
+            ]
+          },
+          "biologist_name": {
+            "type": "string"
+          },
+          "biologist_phone": {
+            "type": "string"
+          },
+          "result_transmission_date": {
+            "type": "string"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
+          }
+        }
+      },
+      "Exam-control-sheets": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "confirmed_case": {
+            "type": "string",
+            "enum": [
+              "first",
+              "second",
+              "other"
+            ]
+          },
+          "other_confirmed_case": {
+            "type": "string"
+          },
+          "contact": {
+            "type": "string",
+            "enum": [
+              "j8",
+              "j14"
+            ]
+          },
+          "traveler": {
+            "type": "string",
+            "enum": [
+              "j8",
+              "j14"
+            ]
+          },
+          "risk_population": {
+            "type": "string",
+            "enum": [
+              "hemodialysed",
+              "hta",
+              "diabetes",
+              "first_line_agent"
+            ]
+          },
+          "risk_population_j": {
+            "type": "string",
+            "enum": [
+              "j8",
+              "j14"
+            ]
+          },
+          "other_category": {
+            "type": "string"
+          },
+          "other_category_j": {
+            "type": "string",
+            "enum": [
+              "j8",
+              "j14"
+            ]
+          },
+          "control_date": {
+            "type": "string"
+          },
+          "district": {
+            "type": "string"
+          },
+          "firstname": {
+            "type": "string"
+          },
+          "lastname": {
+            "type": "string"
+          },
+          "birthday": {
+            "type": "string"
+          },
+          "age": {
+            "type": "integer"
+          },
+          "age_months": {
+            "type": "integer"
+          },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "male",
+              "female"
+            ]
+          },
+          "quarter": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "urgent_phone": {
+            "type": "string"
+          },
+          "epid": {
+            "type": "string"
+          },
+          "sample_taken": {
+            "type": "boolean"
+          },
+          "sample_date": {
+            "type": "string"
+          },
+          "sample_hour": {
+            "type": "time"
+          },
+          "sample_nature": {
+            "type": "string",
+            "enum": [
+              "oro_pharynged",
+              "naso_pharynged"
+            ]
+          },
+          "other_sample": {
+            "type": "string"
+          },
+          "blood_sample": {
+            "type": "boolean"
+          },
+          "sample_conservation": {
+            "type": "string",
+            "enum": [
+              "ambiant",
+              "cold"
+            ]
+          },
+          "no_sample_reason_other": {
+            "type": "string"
+          },
+          "no_sample_reason": {
+            "type": "string",
+            "enum": [
+              "no_kit",
+              "no_skill",
+              "patient_state",
+              "patient_rejection"
+            ]
+          },
+          "agent_name": {
+            "type": "string"
+          },
+          "agent_phone": {
+            "type": "string"
+          },
+          "lab_name": {
+            "type": "string"
+          },
+          "reception_date": {
+            "type": "string"
+          },
+          "reception_hour": {
+            "type": "time"
+          },
+          "lab_reg_number": {
+            "type": "string"
+          },
+          "reception_temperature": {
+            "type": "string",
+            "enum": [
+              "frozen",
+              "cold",
+              "ambiant"
+            ]
+          },
+          "reception_condition": {
+            "type": "string",
+            "enum": [
+              "good",
+              "bad"
+            ]
+          },
+          "pcr": {
+            "type": "boolean"
+          },
+          "pcr_date": {
+            "type": "string"
+          },
+          "sars_covid_kit": {
+            "type": "string"
+          },
+          "rt_pcr_result": {
+            "type": "string",
+            "enum": [
+              "positive",
+              "negative"
+            ]
+          },
+          "biologist_signature": {
+            "type": "string"
+          },
+          "biologist_name": {
+            "type": "string"
+          },
+          "biologist_phone": {
+            "type": "string"
+          },
+          "result_transmission_date": {
+            "type": "string"
+          },
+          "team_chef": {
+            "type": "string"
+          },
+          "created_by": {
+            "required": [
+              "id",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "firstname": {
+                "type": "string"
+              },
+              "lastname": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "registrationToken": {
+                "type": "string"
+              },
+              "isActive": {
+                "type": "boolean"
+              },
+              "roles": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "blocked": {
+                "type": "boolean"
+              }
+            }
+          },
+          "updated_by": {
+            "required": [
+              "id",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "firstname": {
+                "type": "string"
+              },
+              "lastname": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "registrationToken": {
+                "type": "string"
+              },
+              "isActive": {
+                "type": "boolean"
+              },
+              "roles": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "blocked": {
+                "type": "boolean"
+              }
+            }
+          }
+        }
+      },
+      "NewExam-control-sheets": {
+        "properties": {
+          "confirmed_case": {
+            "type": "string",
+            "enum": [
+              "first",
+              "second",
+              "other"
+            ]
+          },
+          "other_confirmed_case": {
+            "type": "string"
+          },
+          "contact": {
+            "type": "string",
+            "enum": [
+              "j8",
+              "j14"
+            ]
+          },
+          "traveler": {
+            "type": "string",
+            "enum": [
+              "j8",
+              "j14"
+            ]
+          },
+          "risk_population": {
+            "type": "string",
+            "enum": [
+              "hemodialysed",
+              "hta",
+              "diabetes",
+              "first_line_agent"
+            ]
+          },
+          "risk_population_j": {
+            "type": "string",
+            "enum": [
+              "j8",
+              "j14"
+            ]
+          },
+          "other_category": {
+            "type": "string"
+          },
+          "other_category_j": {
+            "type": "string",
+            "enum": [
+              "j8",
+              "j14"
+            ]
+          },
+          "control_date": {
+            "type": "string"
+          },
+          "district": {
+            "type": "string"
+          },
+          "firstname": {
+            "type": "string"
+          },
+          "lastname": {
+            "type": "string"
+          },
+          "birthday": {
+            "type": "string"
+          },
+          "age": {
+            "type": "integer"
+          },
+          "age_months": {
+            "type": "integer"
+          },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "male",
+              "female"
+            ]
+          },
+          "quarter": {
+            "type": "string"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "urgent_phone": {
+            "type": "string"
+          },
+          "epid": {
+            "type": "string"
+          },
+          "sample_taken": {
+            "type": "boolean"
+          },
+          "sample_date": {
+            "type": "string"
+          },
+          "sample_hour": {
+            "type": "time"
+          },
+          "sample_nature": {
+            "type": "string",
+            "enum": [
+              "oro_pharynged",
+              "naso_pharynged"
+            ]
+          },
+          "other_sample": {
+            "type": "string"
+          },
+          "blood_sample": {
+            "type": "boolean"
+          },
+          "sample_conservation": {
+            "type": "string",
+            "enum": [
+              "ambiant",
+              "cold"
+            ]
+          },
+          "no_sample_reason_other": {
+            "type": "string"
+          },
+          "no_sample_reason": {
+            "type": "string",
+            "enum": [
+              "no_kit",
+              "no_skill",
+              "patient_state",
+              "patient_rejection"
+            ]
+          },
+          "agent_name": {
+            "type": "string"
+          },
+          "agent_phone": {
+            "type": "string"
+          },
+          "lab_name": {
+            "type": "string"
+          },
+          "reception_date": {
+            "type": "string"
+          },
+          "reception_hour": {
+            "type": "time"
+          },
+          "lab_reg_number": {
+            "type": "string"
+          },
+          "reception_temperature": {
+            "type": "string",
+            "enum": [
+              "frozen",
+              "cold",
+              "ambiant"
+            ]
+          },
+          "reception_condition": {
+            "type": "string",
+            "enum": [
+              "good",
+              "bad"
+            ]
+          },
+          "pcr": {
+            "type": "boolean"
+          },
+          "pcr_date": {
+            "type": "string"
+          },
+          "sars_covid_kit": {
+            "type": "string"
+          },
+          "rt_pcr_result": {
+            "type": "string",
+            "enum": [
+              "positive",
+              "negative"
+            ]
+          },
+          "biologist_signature": {
+            "type": "string"
+          },
+          "biologist_name": {
+            "type": "string"
+          },
+          "biologist_phone": {
+            "type": "string"
+          },
+          "result_transmission_date": {
+            "type": "string"
+          },
+          "team_chef": {
             "type": "string"
           },
           "created_by": {

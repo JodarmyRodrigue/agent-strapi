@@ -1,0 +1,209 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exam_control_sheets",
+  "info": {
+    "name": "exam_control_sheets"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "confirmed_case": {
+      "type": "enumeration",
+      "enum": [
+        "first",
+        "second",
+        "other"
+      ]
+    },
+    "other_confirmed_case": {
+      "type": "string"
+    },
+    "contact": {
+      "type": "enumeration",
+      "enum": [
+        "j8",
+        "j14"
+      ]
+    },
+    "traveler": {
+      "type": "enumeration",
+      "enum": [
+        "j8",
+        "j14"
+      ]
+    },
+    "risk_population": {
+      "type": "enumeration",
+      "enum": [
+        "hemodialysed",
+        "hta",
+        "diabetes",
+        "first_line_agent"
+      ]
+    },
+    "risk_population_j": {
+      "type": "enumeration",
+      "enum": [
+        "j8",
+        "j14"
+      ]
+    },
+    "other_category": {
+      "type": "string"
+    },
+    "other_category_j": {
+      "type": "enumeration",
+      "enum": [
+        "j8",
+        "j14"
+      ]
+    },
+    "control_date": {
+      "type": "date"
+    },
+    "district": {
+      "type": "string"
+    },
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "birthday": {
+      "type": "date"
+    },
+    "age": {
+      "type": "biginteger"
+    },
+    "age_months": {
+      "type": "integer"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ]
+    },
+    "quarter": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "urgent_phone": {
+      "type": "string"
+    },
+    "epid": {
+      "type": "string"
+    },
+    "sample_taken": {
+      "type": "boolean"
+    },
+    "sample_date": {
+      "type": "date"
+    },
+    "sample_hour": {
+      "type": "time"
+    },
+    "sample_nature": {
+      "type": "enumeration",
+      "enum": [
+        "oro_pharynged",
+        "naso_pharynged"
+      ]
+    },
+    "other_sample": {
+      "type": "string"
+    },
+    "blood_sample": {
+      "type": "boolean"
+    },
+    "sample_conservation": {
+      "type": "enumeration",
+      "enum": [
+        "ambiant",
+        "cold"
+      ]
+    },
+    "no_sample_reason_other": {
+      "type": "text"
+    },
+    "no_sample_reason": {
+      "type": "enumeration",
+      "enum": [
+        "no_kit",
+        "no_skill",
+        "patient_state",
+        "patient_rejection"
+      ]
+    },
+    "agent_name": {
+      "type": "string"
+    },
+    "agent_phone": {
+      "type": "string"
+    },
+    "lab_name": {
+      "type": "string"
+    },
+    "reception_date": {
+      "type": "date"
+    },
+    "reception_hour": {
+      "type": "time"
+    },
+    "lab_reg_number": {
+      "type": "string"
+    },
+    "reception_temperature": {
+      "type": "enumeration",
+      "enum": [
+        "frozen",
+        "cold",
+        "ambiant"
+      ]
+    },
+    "reception_condition": {
+      "type": "enumeration",
+      "enum": [
+        "good",
+        "bad"
+      ]
+    },
+    "pcr": {
+      "type": "boolean"
+    },
+    "pcr_date": {
+      "type": "date"
+    },
+    "sars_covid_kit": {
+      "type": "string"
+    },
+    "rt_pcr_result": {
+      "type": "enumeration",
+      "enum": [
+        "positive",
+        "negative"
+      ]
+    },
+    "biologist_signature": {
+      "type": "string"
+    },
+    "biologist_name": {
+      "type": "string"
+    },
+    "biologist_phone": {
+      "type": "string"
+    },
+    "result_transmission_date": {
+      "type": "date"
+    },
+    "team_chef": {
+      "type": "string"
+    }
+  }
+}

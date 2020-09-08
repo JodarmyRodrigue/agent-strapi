@@ -1,0 +1,300 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coronavirus_notification_sheets",
+  "info": {
+    "name": "coronavirus_notification_sheet"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "case_status": {
+      "type": "enumeration",
+      "enum": [
+        "suspect",
+        "contact",
+        "traveler",
+        "risk_population",
+        "other"
+      ]
+    },
+    "case_status_risk_population": {
+      "type": "enumeration",
+      "enum": [
+        "hemodialysed",
+        "hta",
+        "diabetes",
+        "agents"
+      ]
+    },
+    "other_case_status": {
+      "type": "string"
+    },
+    "investigation_date": {
+      "type": "date"
+    },
+    "sanitary_formation": {
+      "type": "string"
+    },
+    "district": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "case_number": {
+      "type": "integer"
+    },
+    "investigator": {
+      "type": "string"
+    },
+    "investigator_phone": {
+      "type": "string"
+    },
+    "epid": {
+      "type": "string"
+    },
+    "patient_name": {
+      "type": "string"
+    },
+    "patient_birthday": {
+      "type": "date"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "age_months": {
+      "type": "integer"
+    },
+    "age_days": {
+      "type": "integer"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ]
+    },
+    "patient_occupation": {
+      "type": "string"
+    },
+    "patient_residence_district": {
+      "type": "string"
+    },
+    "patient_city": {
+      "type": "string"
+    },
+    "patient_quarter": {
+      "type": "string"
+    },
+    "patient_gps_latitude": {
+      "type": "float"
+    },
+    "patient_gps_longitude": {
+      "type": "float"
+    },
+    "patient_residence": {
+      "type": "enumeration",
+      "enum": [
+        "urban",
+        "rural"
+      ]
+    },
+    "patient_caretaker_name": {
+      "type": "string"
+    },
+    "patient_caretaker_phone": {
+      "type": "string"
+    },
+    "patient_phone": {
+      "type": "string"
+    },
+    "urgent_infos": {
+      "type": "string"
+    },
+    "first_symptoms": {
+      "type": "date"
+    },
+    "consultation_date": {
+      "type": "date"
+    },
+    "symptoms": {
+      "type": "json"
+    },
+    "patient_status": {
+      "type": "enumeration",
+      "enum": [
+        "hospitalized",
+        "home",
+        "quarantine"
+      ]
+    },
+    "patient_status_location": {
+      "type": "string"
+    },
+    "patient_comorbidity_conditions": {
+      "type": "json"
+    },
+    "patient_occupations": {
+      "type": "json"
+    },
+    "patient_did_travel": {
+      "type": "enumeration",
+      "enum": [
+        "yes",
+        "no",
+        "unknown"
+      ]
+    },
+    "patient_travel_destinations": {
+      "type": "json"
+    },
+    "patient_visit_health": {
+      "type": "enumeration",
+      "enum": [
+        "yes",
+        "no",
+        "unknown"
+      ]
+    },
+    "patient_contact": {
+      "type": "enumeration",
+      "enum": [
+        "yes",
+        "no",
+        "unknown"
+      ]
+    },
+    "patient_contact_location": {
+      "type": "json"
+    },
+    "patient_travel_location": {
+      "type": "json"
+    },
+    "patient_did_visit_animal_market": {
+      "type": "enumeration",
+      "enum": [
+        "yes",
+        "no",
+        "unknown"
+      ]
+    },
+    "patient_did_wear_mask": {
+      "type": "enumeration",
+      "enum": [
+        "yes",
+        "no",
+        "unknown"
+      ]
+    },
+    "patient_did_wash_hands": {
+      "type": "enumeration",
+      "enum": [
+        "yes",
+        "no",
+        "unknown"
+      ]
+    },
+    "sample": {
+      "type": "boolean"
+    },
+    "sample_date": {
+      "type": "date"
+    },
+    "sample_hour": {
+      "type": "time"
+    },
+    "sample_nature": {
+      "type": "enumeration",
+      "enum": [
+        "oro_pharynged",
+        "naso_pharynged"
+      ]
+    },
+    "sample_other_nature": {
+      "type": "string"
+    },
+    "sample_blood": {
+      "type": "boolean"
+    },
+    "sample_conservation": {
+      "type": "enumeration",
+      "enum": [
+        "ambiant",
+        "cold"
+      ]
+    },
+    "no_sample_reason": {
+      "type": "enumeration",
+      "enum": [
+        "no_kit",
+        "no_skill",
+        "patient_state",
+        "patient_refusal"
+      ]
+    },
+    "no_sample_reason_other": {
+      "type": "string"
+    },
+    "sample_agent_name": {
+      "type": "string"
+    },
+    "sample_agent_phone": {
+      "type": "string"
+    },
+    "lab_reception_date": {
+      "type": "date"
+    },
+    "lab_reception_hour": {
+      "type": "time"
+    },
+    "lab_reg_number": {
+      "type": "string"
+    },
+    "lab_reception_temperature": {
+      "type": "enumeration",
+      "enum": [
+        "frozen",
+        "cold",
+        "ambiant"
+      ]
+    },
+    "lab_name": {
+      "type": "string"
+    },
+    "lab_reception_condition": {
+      "type": "enumeration",
+      "enum": [
+        "good",
+        "bad"
+      ]
+    },
+    "pcr": {
+      "type": "boolean"
+    },
+    "pcr_date": {
+      "type": "date"
+    },
+    "sars_covid_kit": {
+      "type": "string"
+    },
+    "rt_pcr_result": {
+      "type": "enumeration",
+      "enum": [
+        "positive",
+        "negative"
+      ]
+    },
+    "biologist_name": {
+      "type": "string"
+    },
+    "biologist_phone": {
+      "type": "string"
+    },
+    "result_transmission_date": {
+      "type": "date"
+    }
+  }
+}

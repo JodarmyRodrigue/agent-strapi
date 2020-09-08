@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/coronavirus-notification-sheets",
+      "handler": "coronavirus-notification-sheet.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/coronavirus-notification-sheets/count",
+      "handler": "coronavirus-notification-sheet.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/coronavirus-notification-sheets/:id",
+      "handler": "coronavirus-notification-sheet.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/coronavirus-notification-sheets",
+      "handler": "coronavirus-notification-sheet.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/coronavirus-notification-sheets/:id",
+      "handler": "coronavirus-notification-sheet.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/coronavirus-notification-sheets/:id",
+      "handler": "coronavirus-notification-sheet.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

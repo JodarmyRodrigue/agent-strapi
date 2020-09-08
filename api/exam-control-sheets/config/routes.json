@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/exam-control-sheets",
+      "handler": "exam-control-sheets.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/exam-control-sheets/count",
+      "handler": "exam-control-sheets.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/exam-control-sheets/:id",
+      "handler": "exam-control-sheets.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/exam-control-sheets",
+      "handler": "exam-control-sheets.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/exam-control-sheets/:id",
+      "handler": "exam-control-sheets.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/exam-control-sheets/:id",
+      "handler": "exam-control-sheets.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
