@@ -714,9 +714,6 @@
               "negative"
             ]
           },
-          "biologist_signature": {
-            "type": "string"
-          },
           "biologist_name": {
             "type": "string"
           },
@@ -999,9 +996,6 @@
               "positive",
               "negative"
             ]
-          },
-          "biologist_signature": {
-            "type": "string"
           },
           "biologist_name": {
             "type": "string"

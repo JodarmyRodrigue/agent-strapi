@@ -58,7 +58,7 @@
     "patient_name": {
       "type": "string"
     },
-    "patient_birthday": {
+    "birthday": {
       "type": "date"
     },
     "age": {
@@ -86,13 +86,13 @@
     "patient_city": {
       "type": "string"
     },
-    "patient_quarter": {
+    "quarter": {
       "type": "string"
     },
-    "patient_gps_latitude": {
+    "gps_latitude": {
       "type": "float"
     },
-    "patient_gps_longitude": {
+    "gps_longitude": {
       "type": "float"
     },
     "patient_residence": {
@@ -108,10 +108,10 @@
     "patient_caretaker_phone": {
       "type": "string"
     },
-    "patient_phone": {
+    "phone": {
       "type": "string"
     },
-    "urgent_infos": {
+    "urgent_phone": {
       "type": "string"
     },
     "first_symptoms": {
@@ -197,7 +197,7 @@
         "unknown"
       ]
     },
-    "sample": {
+    "sample_taken": {
       "type": "boolean"
     },
     "sample_date": {
@@ -210,14 +210,12 @@
       "type": "enumeration",
       "enum": [
         "oro_pharynged",
-        "naso_pharynged"
+        "naso_pharynged",
+        "blood"
       ]
     },
-    "sample_other_nature": {
+    "other_sample": {
       "type": "string"
-    },
-    "sample_blood": {
-      "type": "boolean"
     },
     "sample_conservation": {
       "type": "enumeration",
@@ -238,22 +236,22 @@
     "no_sample_reason_other": {
       "type": "string"
     },
-    "sample_agent_name": {
+    "agent_name": {
       "type": "string"
     },
-    "sample_agent_phone": {
+    "agent_phone": {
       "type": "string"
     },
-    "lab_reception_date": {
+    "reception_date": {
       "type": "date"
     },
-    "lab_reception_hour": {
+    "reception_hour": {
       "type": "time"
     },
     "lab_reg_number": {
       "type": "string"
     },
-    "lab_reception_temperature": {
+    "reception_temperature": {
       "type": "enumeration",
       "enum": [
         "frozen",
@@ -264,7 +262,7 @@
     "lab_name": {
       "type": "string"
     },
-    "lab_reception_condition": {
+    "reception_condition": {
       "type": "enumeration",
       "enum": [
         "good",

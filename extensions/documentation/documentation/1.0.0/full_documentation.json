@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/12/2020 1:37:27 AM"
+    "x-generation-date": "09/12/2020 2:05:41 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4749,7 +4749,7 @@
           "patient_name": {
             "type": "string"
           },
-          "patient_birthday": {
+          "birthday": {
             "type": "string"
           },
           "age": {
@@ -4777,13 +4777,13 @@
           "patient_city": {
             "type": "string"
           },
-          "patient_quarter": {
+          "quarter": {
             "type": "string"
           },
-          "patient_gps_latitude": {
+          "gps_latitude": {
             "type": "number"
           },
-          "patient_gps_longitude": {
+          "gps_longitude": {
             "type": "number"
           },
           "patient_residence": {
@@ -4799,10 +4799,10 @@
           "patient_caretaker_phone": {
             "type": "string"
           },
-          "patient_phone": {
+          "phone": {
             "type": "string"
           },
-          "urgent_infos": {
+          "urgent_phone": {
             "type": "string"
           },
           "first_symptoms": {
@@ -4888,7 +4888,7 @@
               "unknown"
             ]
           },
-          "sample": {
+          "sample_taken": {
             "type": "boolean"
           },
           "sample_date": {
@@ -4901,14 +4901,12 @@
             "type": "string",
             "enum": [
               "oro_pharynged",
-              "naso_pharynged"
+              "naso_pharynged",
+              "blood"
             ]
           },
-          "sample_other_nature": {
+          "other_sample": {
             "type": "string"
-          },
-          "sample_blood": {
-            "type": "boolean"
           },
           "sample_conservation": {
             "type": "string",
@@ -4929,22 +4927,22 @@
           "no_sample_reason_other": {
             "type": "string"
           },
-          "sample_agent_name": {
+          "agent_name": {
             "type": "string"
           },
-          "sample_agent_phone": {
+          "agent_phone": {
             "type": "string"
           },
-          "lab_reception_date": {
+          "reception_date": {
             "type": "string"
           },
-          "lab_reception_hour": {
+          "reception_hour": {
             "type": "time"
           },
           "lab_reg_number": {
             "type": "string"
           },
-          "lab_reception_temperature": {
+          "reception_temperature": {
             "type": "string",
             "enum": [
               "frozen",
@@ -4955,7 +4953,7 @@
           "lab_name": {
             "type": "string"
           },
-          "lab_reception_condition": {
+          "reception_condition": {
             "type": "string",
             "enum": [
               "good",
@@ -5128,7 +5126,7 @@
           "patient_name": {
             "type": "string"
           },
-          "patient_birthday": {
+          "birthday": {
             "type": "string"
           },
           "age": {
@@ -5156,13 +5154,13 @@
           "patient_city": {
             "type": "string"
           },
-          "patient_quarter": {
+          "quarter": {
             "type": "string"
           },
-          "patient_gps_latitude": {
+          "gps_latitude": {
             "type": "number"
           },
-          "patient_gps_longitude": {
+          "gps_longitude": {
             "type": "number"
           },
           "patient_residence": {
@@ -5178,10 +5176,10 @@
           "patient_caretaker_phone": {
             "type": "string"
           },
-          "patient_phone": {
+          "phone": {
             "type": "string"
           },
-          "urgent_infos": {
+          "urgent_phone": {
             "type": "string"
           },
           "first_symptoms": {
@@ -5267,7 +5265,7 @@
               "unknown"
             ]
           },
-          "sample": {
+          "sample_taken": {
             "type": "boolean"
           },
           "sample_date": {
@@ -5280,14 +5278,12 @@
             "type": "string",
             "enum": [
               "oro_pharynged",
-              "naso_pharynged"
+              "naso_pharynged",
+              "blood"
             ]
           },
-          "sample_other_nature": {
+          "other_sample": {
             "type": "string"
-          },
-          "sample_blood": {
-            "type": "boolean"
           },
           "sample_conservation": {
             "type": "string",
@@ -5308,22 +5304,22 @@
           "no_sample_reason_other": {
             "type": "string"
           },
-          "sample_agent_name": {
+          "agent_name": {
             "type": "string"
           },
-          "sample_agent_phone": {
+          "agent_phone": {
             "type": "string"
           },
-          "lab_reception_date": {
+          "reception_date": {
             "type": "string"
           },
-          "lab_reception_hour": {
+          "reception_hour": {
             "type": "time"
           },
           "lab_reg_number": {
             "type": "string"
           },
-          "lab_reception_temperature": {
+          "reception_temperature": {
             "type": "string",
             "enum": [
               "frozen",
@@ -5334,7 +5330,7 @@
           "lab_name": {
             "type": "string"
           },
-          "lab_reception_condition": {
+          "reception_condition": {
             "type": "string",
             "enum": [
               "good",
@@ -5560,9 +5556,6 @@
               "positive",
               "negative"
             ]
-          },
-          "biologist_signature": {
-            "type": "string"
           },
           "biologist_name": {
             "type": "string"
@@ -5846,9 +5839,6 @@
               "positive",
               "negative"
             ]
-          },
-          "biologist_signature": {
-            "type": "string"
           },
           "biologist_name": {
             "type": "string"
