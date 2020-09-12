@@ -639,14 +639,12 @@
             "type": "string",
             "enum": [
               "oro_pharynged",
-              "naso_pharynged"
+              "naso_pharynged",
+              "blood"
             ]
           },
           "other_sample": {
             "type": "string"
-          },
-          "blood_sample": {
-            "type": "boolean"
           },
           "sample_conservation": {
             "type": "string",
@@ -927,14 +925,12 @@
             "type": "string",
             "enum": [
               "oro_pharynged",
-              "naso_pharynged"
+              "naso_pharynged",
+              "blood"
             ]
           },
           "other_sample": {
             "type": "string"
-          },
-          "blood_sample": {
-            "type": "boolean"
           },
           "sample_conservation": {
             "type": "string",

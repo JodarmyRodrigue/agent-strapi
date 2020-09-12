@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/09/2020 4:20:35 PM"
+    "x-generation-date": "09/12/2020 1:37:27 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5486,14 +5486,12 @@
             "type": "string",
             "enum": [
               "oro_pharynged",
-              "naso_pharynged"
+              "naso_pharynged",
+              "blood"
             ]
           },
           "other_sample": {
             "type": "string"
-          },
-          "blood_sample": {
-            "type": "boolean"
           },
           "sample_conservation": {
             "type": "string",
@@ -5774,14 +5772,12 @@
             "type": "string",
             "enum": [
               "oro_pharynged",
-              "naso_pharynged"
+              "naso_pharynged",
+              "blood"
             ]
           },
           "other_sample": {
             "type": "string"
-          },
-          "blood_sample": {
-            "type": "boolean"
           },
           "sample_conservation": {
             "type": "string",
