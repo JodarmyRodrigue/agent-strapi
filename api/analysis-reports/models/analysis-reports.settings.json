@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "analysis_reports",
+  "info": {
+    "name": "analysis-reports"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ]
+    },
+    "phone_number": {
+      "type": "integer"
+    },
+    "city_town": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "result": {
+      "type": "boolean"
+    }
+  }
+}

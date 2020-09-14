@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/analysis-reports",
+      "handler": "analysis-reports.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/analysis-reports/count",
+      "handler": "analysis-reports.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/analysis-reports/:id",
+      "handler": "analysis-reports.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/analysis-reports",
+      "handler": "analysis-reports.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/analysis-reports/:id",
+      "handler": "analysis-reports.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/analysis-reports/:id",
+      "handler": "analysis-reports.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
