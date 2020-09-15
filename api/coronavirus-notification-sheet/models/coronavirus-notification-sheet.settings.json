@@ -120,9 +120,6 @@
     "consultation_date": {
       "type": "date"
     },
-    "symptoms": {
-      "type": "json"
-    },
     "patient_status": {
       "type": "enumeration",
       "enum": [
@@ -134,12 +131,6 @@
     "patient_status_location": {
       "type": "string"
     },
-    "patient_comorbidity_conditions": {
-      "type": "json"
-    },
-    "patient_occupations": {
-      "type": "json"
-    },
     "patient_did_travel": {
       "type": "enumeration",
       "enum": [
@@ -147,9 +138,6 @@
         "no",
         "unknown"
       ]
-    },
-    "patient_travel_destinations": {
-      "type": "json"
     },
     "patient_visit_health": {
       "type": "enumeration",
@@ -166,12 +154,6 @@
         "no",
         "unknown"
       ]
-    },
-    "patient_contact_location": {
-      "type": "json"
-    },
-    "patient_travel_location": {
-      "type": "json"
     },
     "patient_did_visit_animal_market": {
       "type": "enumeration",
@@ -293,6 +275,24 @@
     },
     "result_transmission_date": {
       "type": "date"
+    },
+    "symptoms": {
+      "type": "text"
+    },
+    "patient_comorbidity_condition": {
+      "type": "text"
+    },
+    "patient_occupations": {
+      "type": "text"
+    },
+    "patient_travel_destinations": {
+      "type": "text"
+    },
+    "patient_contact_location": {
+      "type": "text"
+    },
+    "patient_travel_location": {
+      "type": "text"
     }
   }
 }

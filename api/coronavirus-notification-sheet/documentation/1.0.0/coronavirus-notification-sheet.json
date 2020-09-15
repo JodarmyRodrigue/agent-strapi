@@ -646,9 +646,6 @@
           "consultation_date": {
             "type": "string"
           },
-          "symptoms": {
-            "type": "object"
-          },
           "patient_status": {
             "type": "string",
             "enum": [
@@ -660,12 +657,6 @@
           "patient_status_location": {
             "type": "string"
           },
-          "patient_comorbidity_conditions": {
-            "type": "object"
-          },
-          "patient_occupations": {
-            "type": "object"
-          },
           "patient_did_travel": {
             "type": "string",
             "enum": [
@@ -673,9 +664,6 @@
               "no",
               "unknown"
             ]
-          },
-          "patient_travel_destinations": {
-            "type": "object"
           },
           "patient_visit_health": {
             "type": "string",
@@ -692,12 +680,6 @@
               "no",
               "unknown"
             ]
-          },
-          "patient_contact_location": {
-            "type": "object"
-          },
-          "patient_travel_location": {
-            "type": "object"
           },
           "patient_did_visit_animal_market": {
             "type": "string",
@@ -818,6 +800,24 @@
             "type": "string"
           },
           "result_transmission_date": {
+            "type": "string"
+          },
+          "symptoms": {
+            "type": "string"
+          },
+          "patient_comorbidity_condition": {
+            "type": "string"
+          },
+          "patient_occupations": {
+            "type": "string"
+          },
+          "patient_travel_destinations": {
+            "type": "string"
+          },
+          "patient_contact_location": {
+            "type": "string"
+          },
+          "patient_travel_location": {
             "type": "string"
           },
           "created_by": {
@@ -1023,9 +1023,6 @@
           "consultation_date": {
             "type": "string"
           },
-          "symptoms": {
-            "type": "object"
-          },
           "patient_status": {
             "type": "string",
             "enum": [
@@ -1037,12 +1034,6 @@
           "patient_status_location": {
             "type": "string"
           },
-          "patient_comorbidity_conditions": {
-            "type": "object"
-          },
-          "patient_occupations": {
-            "type": "object"
-          },
           "patient_did_travel": {
             "type": "string",
             "enum": [
@@ -1050,9 +1041,6 @@
               "no",
               "unknown"
             ]
-          },
-          "patient_travel_destinations": {
-            "type": "object"
           },
           "patient_visit_health": {
             "type": "string",
@@ -1069,12 +1057,6 @@
               "no",
               "unknown"
             ]
-          },
-          "patient_contact_location": {
-            "type": "object"
-          },
-          "patient_travel_location": {
-            "type": "object"
           },
           "patient_did_visit_animal_market": {
             "type": "string",
@@ -1195,6 +1177,24 @@
             "type": "string"
           },
           "result_transmission_date": {
+            "type": "string"
+          },
+          "symptoms": {
+            "type": "string"
+          },
+          "patient_comorbidity_condition": {
+            "type": "string"
+          },
+          "patient_occupations": {
+            "type": "string"
+          },
+          "patient_travel_destinations": {
+            "type": "string"
+          },
+          "patient_contact_location": {
+            "type": "string"
+          },
+          "patient_travel_location": {
             "type": "string"
           },
           "created_by": {
